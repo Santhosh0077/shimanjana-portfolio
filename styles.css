@@ -99,6 +99,18 @@ nav .logo a:hover {
   place-items: center;
 }
 
+ span {
+    color: rgb(12, 73, 187);
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {color: rgb(236, 96, 2);}
+    25%  {color: rgb(0, 255, 157);}
+    50%  {color: rgb(233, 14, 196);}
+    100% {color: rgb(223, 18, 18);}
+  }
 .image img {
   width: min(25rem, 90%);
   border-radius: 100%;
