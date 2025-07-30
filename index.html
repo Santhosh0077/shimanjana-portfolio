@@ -1,53 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Santhosh_Portfolio</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__content">
-        <div class="logo"><a href="#">Portfolio</a></div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <meta name="description" content="Personal Portfolio Website" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-        <section class="section">
-          <div class="section__container">
 
-              <div class="content">
-                  <p class="subtitle">HELLO</p>
-                    <h1 class="title">
-                      I'm <span>Santhosh</span> <br>a Web Developer
-                    </h1>
-                    <p class="description">
-                      Welcome to my web developer portfolio! I'm santhosh, a skilled and
-                      creative web developer with a passion for creating beautiful,
-                      responsive, and user-friendly websites. I've worked on a variety of
-                      web projects, ranging from personal blogs to e-commerce platforms.
-                  </p>
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">Hello, I'm <span class="highlight">shimanjana</span></h1>
+                    <h2 class="home-subtitle">Aspiring web Developer</h2>
+                    <p class="home-description">
+                        Passionate about creating innovative web solutions and bringing ideas to life through code.
+                    </p>
+                    <a href="#resume" class="cta-button">Download Resume</a>
+                </div>
+                <div class="home-image">
+                    <div class="profile-circle">
+                        <div class="profile-img">
+                            <img src="shisa (2).jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dedicated Computer Science student with a passion for web development and problem-solving. 
+                    My journey in programming started with curiosity and has evolved into a deep love for creating 
+                    digital experiences that make a difference.</p>
+                    
+                    <p>Currently pursuing my Bachelor's degree in Computer Science, I'm constantly learning new 
+                    technologies and applying them to real-world projects. I believe in writing clean, efficient 
+                    code and creating user-friendly interfaces.</p>
+                    
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                    projects, or brainstorming the next big idea that could change the world.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-delay="0.1s">
+                    <div class="skill-icon html"></div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and modern HTML standards</p>
+                </div>
+                <div class="skill-card" data-delay="0.2s">
+                    <div class="skill-icon css"></div>
+                    <h3>CSS3</h3>
+                    <p>Responsive design and advanced styling</p>
+                </div>
+                <div class="skill-card" data-delay="0.3s">
+                    <div class="skill-icon js"></div>
+                    <h3>JavaScript</h3>
+                    <p>Dynamic and interactive web applications</p>
+                </div>
+                <div class="skill-card" data-delay="0.4s">
+                    <div class="skill-icon react"></div>
+                    <h3>React</h3>
+                    <p>Component-based UI development</p>
+                </div>
+                <div class="skill-card" data-delay="0.5s">
+                    <div class="skill-icon java"></div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming</p>
+                </div>
+                <div class="skill-card" data-delay="0.6s">
+                    <div class="skill-icon git"></div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image project1"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform built with HTML, CSS, and JavaScript. Features include product catalog, shopping cart, and user authentication.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
                 
-              </div>
-             <center>
-              <div class="icons">
-                <a href="https://www.instagram.com/_ns_king_43/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Santhosh0077"><i class="fa-brands fa-github"></i></a>
-                <a href="https://wa.link/n65386"><i class="fa-brands fa-whatsapp"></i></a>
-             </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-            </center>
-              <div class="image">
-                <img src="imgs/profile.png" alt="profile" />
-              </div>
-        
-          </div>
-        </section>
-      
-              
-  </body>
+                <div class="project-card">
+                    <div class="project-image project2"></div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app for managing daily tasks and projects. Built with React and local storage for data persistence with a clean, intuitive interface.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image project3"></div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather application that displays current weather and forecasts. Integrates with weather APIs and features a responsive design for all devices.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="resume-content">
+                <h2>Get My Resume</h2>
+                <p>Download my resume to learn more about my experience and qualifications</p>
+                <a href="Shimanjana_Resume.pdf" class="resume-btn" download>
+                    <span>📄</span>
+                    Download Resume PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link github">
+                            <span>🐙</span>
+                            GitHub
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <span>📷</span>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-link facebook">
+                            <span>📘</span>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 shimanjana. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
